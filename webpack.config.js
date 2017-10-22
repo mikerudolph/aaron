@@ -25,29 +25,38 @@ const config = {
     path: path.resolve(__dirname, 'dist/js')
   },
   module: {
-    rules: [{
-      test: /\.scss$/,
-      use: ExtractTextPlugin.extract({
-        use: [
-          {
-            loader: 'css-loader',
-            options: cssLoaderOpts
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader'
+        }
+      },
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          use: [
+            {
+              loader: 'css-loader',
+              options: cssLoaderOpts
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true
+              }
             }
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true
-            }
-          }
-        ]
-      })
-    }]
+          ]
+        })
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin(htmlLoaderOps),
