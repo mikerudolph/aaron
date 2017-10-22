@@ -1,0 +1,20 @@
+week,game_time,date_stamp,nice_score,win,lose,winner,loser,team_home,team_away,season_type,home,passer_rating,passing_att,passing_cmp,passing_ints,passing_tds,passing_twopta,twopta,twoptm,twoptmissed,passing_twoptm,passing_yds,rushing_att,rushing_lng,rushing_lngtd,rushing_tds,rushing_twopta,rushing_twoptm,rushing_yds,tds
+1,4:15,9/12/2010,GB (27) at PHI (20),True,False,GB,PHI,PHI,GB,REG,False,73.1,31,19,2,2,0,0,0,0,0,188,5,7,0,0,0,0,9,2
+2,1:00,9/19/2010,BUF (7) at GB (34),True,False,GB,BUF,GB,BUF,REG,True,127.8,29,19,0,2,0,0,0,0,0,255,5,12,9,1,0,0,20,3
+3,8:30,9/27/2010,GB (17) at CHI (20),False,True,CHI,GB,CHI,GB,REG,False,99.9,45,34,1,1,0,0,0,0,0,316,2,17,3,1,0,0,20,2
+4,1:00,10/3/2010,DET (26) at GB (28),True,False,GB,DET,GB,DET,REG,True,105.3,17,12,2,3,0,0,0,0,0,181,3,16,0,0,0,0,20,3
+5,1:00,10/10/2010,GB (13) at WAS (16),False,True,WAS,GB,WAS,GB,REG,False,75.7,46,27,1,1,0,0,0,0,0,293,4,15,0,0,0,0,30,1
+6,1:00,10/17/2010,MIA (23) at GB (20),False,True,MIA,GB,GB,MIA,REG,True,94.6,33,18,1,1,0,0,0,0,0,313,4,8,1,1,0,0,14,2
+7,8:20,10/24/2010,MIN (24) at GB (28),True,False,GB,MIN,GB,MIN,REG,True,84.8,34,21,2,2,0,0,0,0,0,295,3,11,0,0,0,0,14,2
+8,1:00,10/31/2010,GB (9) at NYJ (0),True,False,GB,NYJ,NYJ,GB,REG,False,59.7,34,15,0,0,0,0,0,0,0,170,3,5,0,0,0,0,5,0
+9,8:20,11/7/2010,DAL (7) at GB (45),True,False,GB,DAL,GB,DAL,REG,True,131.5,34,27,0,3,0,0,0,0,0,289,5,27,0,0,0,0,41,3
+11,1:00,11/21/2010,GB (31) at MIN (3),True,False,GB,MIN,MIN,GB,REG,False,141.3,31,22,0,4,0,0,0,0,0,301,3,15,0,0,0,0,21,4
+12,1:00,11/28/2010,GB (17) at ATL (20),False,True,ATL,GB,ATL,GB,REG,False,124.0,35,26,0,1,0,0,0,0,0,344,12,11,1,1,0,0,51,2
+13,1:00,12/5/2010,SF (16) at GB (34),True,False,GB,SF,GB,SF,REG,True,135.1,30,21,0,3,0,0,0,0,0,298,4,12,0,0,0,0,39,3
+14,1:00,12/12/2010,GB (3) at DET (7),False,True,DET,GB,DET,GB,REG,False,34.7,11,7,1,0,0,0,0,0,0,46,2,18,0,0,0,0,25,0
+16,4:15,12/26/2010,NYG (17) at GB (45),True,False,GB,NYG,GB,NYG,REG,True,139.9,37,25,0,4,0,0,0,0,0,404,2,15,0,0,0,0,26,4
+17,4:15,1/2/2010,CHI (3) at GB (10),True,False,GB,CHI,GB,CHI,REG,True,89.7,28,19,1,1,0,0,0,0,0,229,7,7,0,0,0,0,21,1
+1,4:30,1/9/2010,GB (21) at PHI (16),True,False,GB,PHI,PHI,GB,POST,False,122.5,27,18,0,3,0,0,0,0,0,180,3,8,0,0,0,0,4,3
+2,8:00,1/15/2010,GB (48) at ATL (21),True,False,GB,ATL,ATL,GB,POST,False,146.1,36,31,0,3,0,0,0,0,0,366,2,7,7,1,0,0,13,4
+3,3:00,1/23/2010,GB (21) at CHI (14),True,False,GB,CHI,CHI,GB,POST,False,66.5,30,17,2,0,0,0,0,0,0,244,7,25,1,1,0,0,39,1
+4,6:29,2/6/2010,PIT (25) at GB (31),True,False,GB,PIT,GB,PIT,POST,True,111.5,39,24,0,3,0,0,0,0,0,304,2,-1,0,0,0,0,-2,3
