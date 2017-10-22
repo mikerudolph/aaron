@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./scss/index.scss"],"names":[],"mappings":"AAAA;EACE,gBAAe,EAChB","file":"../css/index.css","sourcesContent":[".bar {\n  fill: steelblue;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./scss/index.scss"],"sourceRoot":""}

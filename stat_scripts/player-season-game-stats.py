@@ -12,7 +12,7 @@ for year in years:
     #games = reg + post
     games = reg
 
-    filename = 'csv/aaron_rodgers/game_stats/' + str(year) + '.csv'
+    filename = 'dist/csv/aaron_rodgers/game_stats/' + str(year) + '.csv'
     with open(filename, 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
         writer.writerow(['week', 'game_time', 'date_stamp', 'nice_score', 'win', 'lose', 'winner', 'loser', 'team_home', 'team_away', 'season_type', 'home', 'passer_rating', 'passing_att', 'passing_cmp', 'passing_ints', 'passing_tds', 'passing_twopta', 'twopta', 'twoptm', 'twoptmissed', 'passing_twoptm', 'passing_yds', 'rushing_att', 'rushing_lng', 'rushing_lngtd', 'rushing_tds', 'rushing_twopta', 'rushing_twoptm', 'rushing_yds', 'tds' ])

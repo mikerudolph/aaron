@@ -10,7 +10,7 @@ for year in years:
     post = nflgame.games(year, home="GB", away="GB", kind="POST")
     games = reg + post
 
-    filename = 'csv/aaron_rodgers/season_plays/' + str(year) + '.csv'
+    filename = 'dist/csv/aaron_rodgers/season_plays/' + str(year) + '.csv'
     with open(filename, 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
         writer.writerow(['week', 'game_time', 'date_stamp', 'desc', 'down', 'drive', 'first_down', 'home', 'note', 'passing_att', 'passing_cmp', 'passing_cmp_air_yds', 'passing_first_down', 'passing_tds', 'passing_yds', 'players', 'playid', 'receiving_rec', 'receiving_tar', 'receiving_tds', 'receiving_yac_yds', 'receiving_yds', 'team', 'time', 'touchdown', 'yardline', 'yards_togo'])

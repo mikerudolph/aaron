@@ -12,7 +12,7 @@ years = [2010, 2011, 2012, 2013, 2014, 2015, 2016]
 #years = [2017]
 
 for year in years:
-    filename = 'csv/aaron_rodgers/season_totals/' + str(year) + '.csv'
+    filename = 'dist/csv/aaron_rodgers/season_totals/' + str(year) + '.csv'
     with open(filename, 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
         writer.writerow(['season_type', 'passer_rating', 'passing_att', 'passing_cmp', 'passing_ints', 'passing_tds', 'passing_twopta', 'twopta', 'twoptm', 'twoptmissed', 'passing_twoptm', 'passing_yds', 'rushing_att', 'rushing_lng', 'rushing_lngtd', 'rushing_tds', 'rushing_twopta', 'rushing_twoptm', 'rushing_yds', 'tds' ])
