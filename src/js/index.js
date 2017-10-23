@@ -3,10 +3,12 @@
 import * as d3 from 'd3';
 import BarChart from './charts/bar';
 import seasonTotals from './lib/season-totals';
+import seasonPlays from './lib/season-plays';
 
 const element = document.querySelector('body');
+const years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017];
 
-seasonTotals.fetch([2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]).then((data) => {
+seasonTotals.fetch(years).then((data) => {
   const chart = new BarChart(element);
 
   chart.renderAxisY(() => {
@@ -23,4 +25,8 @@ seasonTotals.fetch([2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]).then((data)
     });
   })
   .renderBars(data);
+});
+
+seasonPlays.fetch(years).then((data) => {
+  console.log(data);
 });
