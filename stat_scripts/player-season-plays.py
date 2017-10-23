@@ -3,17 +3,19 @@ import csv
 
 aaron = nflgame.find('Aaron Rodgers')[0]
 
+#years = [2010, 2011, 2012, 2013, 2014, 2015, 2016]
 years = [2017]
 
 for year in years:
     reg = nflgame.games(year, home="GB", away="GB", kind="REG")
-    post = nflgame.games(year, home="GB", away="GB", kind="POST")
-    games = reg + post
+    #post = nflgame.games(year, home="GB", away="GB", kind="POST")
+    #games = reg + post
+    games = reg
 
     filename = 'dist/csv/aaron_rodgers/season_plays/' + str(year) + '.csv'
     with open(filename, 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
-        writer.writerow(['week', 'game_time', 'date_stamp', 'desc', 'down', 'drive', 'first_down', 'home', 'note', 'passing_att', 'passing_cmp', 'passing_cmp_air_yds', 'passing_first_down', 'passing_tds', 'passing_yds', 'players', 'playid', 'receiving_rec', 'receiving_tar', 'receiving_tds', 'receiving_yac_yds', 'receiving_yds', 'team', 'time', 'touchdown', 'yardline', 'yards_togo'])
+        writer.writerow(['season', 'week', 'game_time', 'date_stamp', 'desc', 'down', 'drive', 'first_down', 'home', 'note', 'passing_att', 'passing_cmp', 'passing_cmp_air_yds', 'passing_first_down', 'passing_tds', 'passing_yds', 'players', 'playid', 'receiving_rec', 'receiving_tar', 'receiving_tds', 'receiving_yac_yds', 'receiving_yds', 'team', 'time', 'touchdown', 'yardline', 'yards_togo'])
 
         for g in games:
             for schedule in g.schedule:
@@ -29,6 +31,7 @@ for year in years:
                 for play in drive.plays:
                     if play.has_player(aaron.player_id):
                         writer.writerow([
+                            year,
                             week,
                             time,
                             date_stamp,

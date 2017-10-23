@@ -36,7 +36,7 @@ class BarChart {
         .data(data)
         .enter().append('rect')
                 .attr('class', 'bar')
-                .attr('x', (d) => { return this.x(d.year); })
+                .attr('x', (d) => { return this.x(d.season); })
                 .attr('width', this.x.bandwidth())
                 .attr('y', (d) => { return this.y(d.passing_yds); })
                 .attr('height', (d) => { return this.height - this.y(d.passing_yds); });

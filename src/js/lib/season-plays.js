@@ -1,53 +1,39 @@
 'use strict';
 
 import * as d3 from 'd3';
+import CSV from './csv';
 
 class SeasonPlays {
   constructor() {}
 
-  fetch(years) {
+  fetch(seasons) {
     return new Promise((resolve, reject) => {
-      const seasons = [];
+      const seasonProms = [];
 
-      for (let i=0; i<years.length; i++) {
-        seasons.push(
-          this._getCSV(
-            years[i],
-            './csv/aaron_rodgers/season_plays/'+years[i]+'.csv'
-          )
-        );
+      for (let i=0; i<seasons.length; i++) {
+        let csv = new CSV(`./csv/aaron_rodgers/season_plays/${seasons[i]}.csv`);
+        seasonProms.push(csv.get(this._iterator));
       }
 
-      Promise.all(seasons).then((values) => {
+      Promise.all(seasonProms).then((values) => {
         return resolve(values);
       })
     });
   };
 
-  // TODO: convert these params to template string
-  _getCSV(year, filename) {
-    return new Promise((resolve, reject) => {
-      d3.csv(filename, (err, data) => {
-        if (err) {
-          return reject(err);
-        }
+  _iterator(data) {
+    const season = parseInt(data[0].season);
+    const formatted = [];
 
-        const formatted = [];
+    for (let i=0; i<data.length; i++) {
+      // TODO: what data should be formatted here?
+      formatted.push({
+        date: data[i].season
+      });
+    }
 
-        for(let i=0; i<data.length; i++) {
-          // TODO: what data should be formatted here?
-          formatted.push({
-            date: data[i].date_stamp
-          })
-        }
-
-        return resolve({
-          year: year,
-          data: formatted
-        });
-      })
-    });
-  }
-}
+    return formatted;
+  };
+};
 
 export default new SeasonPlays();

@@ -3,19 +3,19 @@ import csv
 
 aaron = nflgame.find('Aaron Rodgers')[0]
 
-#years = [2010, 2011, 2012, 2013, 2014, 2015, 2016]
-years = [2017]
+years = [2010, 2011, 2012, 2013, 2014, 2015, 2016]
+#years = [2017]
 
 for year in years:
     reg = nflgame.games(year, home="GB", away="GB", kind="REG")
-    #post = nflgame.games(year, home="GB", away="GB", kind="POST")
-    #games = reg + post
-    games = reg
+    post = nflgame.games(year, home="GB", away="GB", kind="POST")
+    games = reg + post
+    #games = reg
 
     filename = 'dist/csv/aaron_rodgers/game_stats/' + str(year) + '.csv'
     with open(filename, 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
-        writer.writerow(['week', 'game_time', 'date_stamp', 'nice_score', 'win', 'lose', 'winner', 'loser', 'team_home', 'team_away', 'season_type', 'home', 'passer_rating', 'passing_att', 'passing_cmp', 'passing_ints', 'passing_tds', 'passing_twopta', 'twopta', 'twoptm', 'twoptmissed', 'passing_twoptm', 'passing_yds', 'rushing_att', 'rushing_lng', 'rushing_lngtd', 'rushing_tds', 'rushing_twopta', 'rushing_twoptm', 'rushing_yds', 'tds' ])
+        writer.writerow(['season', 'week', 'game_time', 'date_stamp', 'nice_score', 'win', 'lose', 'winner', 'loser', 'team_home', 'team_away', 'season_type', 'home', 'passer_rating', 'passing_att', 'passing_cmp', 'passing_ints', 'passing_tds', 'passing_twopta', 'twopta', 'twoptm', 'twoptmissed', 'passing_twoptm', 'passing_yds', 'rushing_att', 'rushing_lng', 'rushing_lngtd', 'rushing_tds', 'rushing_twopta', 'rushing_twoptm', 'rushing_yds', 'tds' ])
 
         for g in games:
             for schedule in g.schedule:
@@ -31,6 +31,7 @@ for year in years:
             if g.players.name(aaron.gsis_name):
                 stats = g.players.name(aaron.gsis_name)
                 writer.writerow([
+                    year,
                     week,
                     time,
                     date_stamp,

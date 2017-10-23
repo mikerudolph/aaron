@@ -15,11 +15,12 @@ for year in years:
     filename = 'dist/csv/aaron_rodgers/season_totals/' + str(year) + '.csv'
     with open(filename, 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
-        writer.writerow(['season_type', 'passer_rating', 'passing_att', 'passing_cmp', 'passing_ints', 'passing_tds', 'passing_twopta', 'twopta', 'twoptm', 'twoptmissed', 'passing_twoptm', 'passing_yds', 'rushing_att', 'rushing_lng', 'rushing_lngtd', 'rushing_tds', 'rushing_twopta', 'rushing_twoptm', 'rushing_yds', 'tds' ])
+        writer.writerow(['season', 'season_type', 'passer_rating', 'passing_att', 'passing_cmp', 'passing_ints', 'passing_tds', 'passing_twopta', 'twopta', 'twoptm', 'twoptmissed', 'passing_twoptm', 'passing_yds', 'rushing_att', 'rushing_lng', 'rushing_lngtd', 'rushing_tds', 'rushing_twopta', 'rushing_twoptm', 'rushing_yds', 'tds' ])
 
         regGames = nflgame.games(year, home="GB", away="GB", kind="REG")
         regStats = list(nflgame.combine(regGames).filter(playerid=aaron.playerid))[0]
         writer.writerow([
+            year,
             'REG',
             regStats.passer_rating(),
             regStats.passing_att,
@@ -45,6 +46,7 @@ for year in years:
         postGames = nflgame.games(year, home="GB", away="GB", kind="POST")
         postStats = list(nflgame.combine(postGames).filter(playerid=aaron.playerid))[0]
         writer.writerow([
+            year,
             'POST',
             postStats.passer_rating(),
             postStats.passing_att,

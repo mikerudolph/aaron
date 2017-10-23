@@ -1,18 +1,18 @@
-week,game_time,date_stamp,nice_score,win,lose,winner,loser,team_home,team_away,season_type,home,passer_rating,passing_att,passing_cmp,passing_ints,passing_tds,passing_twopta,twopta,twoptm,twoptmissed,passing_twoptm,passing_yds,rushing_att,rushing_lng,rushing_lngtd,rushing_tds,rushing_twopta,rushing_twoptm,rushing_yds,tds
-1,1:00,9/13/2015,GB (31) at CHI (23),True,False,GB,CHI,CHI,GB,REG,False,140.5,23,18,0,3,0,0,0,0,0,189,8,15,0,0,0,0,35,3
-2,8:30,9/20/2015,SEA (17) at GB (27),True,False,GB,SEA,GB,SEA,REG,True,116.9,33,25,0,2,1,1,1,0,1,249,6,9,0,0,0,0,23,2
-3,8:30,9/28/2015,KC (28) at GB (38),True,False,GB,KC,GB,KC,REG,True,138.5,35,24,0,5,0,0,0,0,0,333,2,11,0,0,0,0,16,5
-4,4:25,10/4/2015,GB (17) at SF (3),True,False,GB,SF,SF,GB,REG,False,99.0,32,22,0,1,0,0,0,0,0,224,3,17,0,0,0,0,33,1
-5,1:00,10/11/2015,STL (10) at GB (24),True,False,GB,STL,GB,STL,REG,True,82.8,30,19,2,2,0,0,0,0,0,241,8,18,0,0,0,0,39,2
-6,4:25,10/18/2015,SD (20) at GB (27),True,False,GB,SD,GB,SD,REG,True,107.7,29,16,0,2,0,0,0,0,0,255,2,15,0,0,0,0,14,2
-8,8:30,11/1/2015,GB (10) at DEN (29),False,True,DEN,GB,DEN,GB,REG,False,69.7,22,14,0,0,0,0,0,0,0,77,2,17,0,0,0,0,31,0
-9,1:00,11/8/2015,GB (29) at CAR (37),False,True,CAR,GB,CAR,GB,REG,False,96.6,48,25,1,4,1,1,1,0,1,369,4,8,0,0,0,0,22,4
-10,1:00,11/15/2015,DET (18) at GB (16),False,True,DET,GB,GB,DET,REG,True,83.6,61,35,0,2,1,1,0,0,0,333,2,9,0,0,0,0,8,2
-11,4:25,11/22/2015,GB (30) at MIN (13),True,False,GB,MIN,MIN,GB,REG,False,86.9,34,16,0,2,1,1,1,0,1,212,3,8,0,0,0,0,6,2
-12,8:30,11/26/2015,CHI (17) at GB (13),False,True,CHI,GB,GB,CHI,REG,True,62.4,43,22,1,1,0,0,0,0,0,202,4,18,0,0,0,0,33,1
-13,8:25,12/3/2015,GB (27) at DET (23),True,False,GB,DET,DET,GB,REG,False,105.4,36,24,1,2,0,1,0,0,0,273,4,17,17,1,1,0,27,3
-14,4:25,12/13/2015,DAL (7) at GB (28),True,False,GB,DAL,GB,DAL,REG,True,99.5,35,22,0,2,0,0,0,0,0,218,3,16,0,0,0,0,27,2
-15,4:05,12/20/2015,GB (30) at OAK (20),True,False,GB,OAK,OAK,GB,REG,False,68.8,39,22,1,1,0,0,0,0,0,204,1,-1,0,0,0,0,-1,1
-16,4:25,12/27/2015,GB (8) at ARI (38),False,True,ARI,GB,ARI,GB,REG,False,66.2,28,15,1,1,1,1,1,0,1,151,3,10,0,0,0,0,19,1
-17,8:30,1/3/2015,MIN (20) at GB (13),False,True,MIN,GB,GB,MIN,REG,True,80.8,44,28,1,1,0,0,0,0,0,291,3,11,0,0,0,0,12,1
-1,4:40,1/10/2015,GB (35) at WAS (18),True,False,GB,WAS,WAS,GB,POST,False,93.5,36,21,0,2,1,1,1,0,1,210,1,-1,0,0,0,0,-1,2
+season,week,game_time,date_stamp,nice_score,win,lose,winner,loser,team_home,team_away,season_type,home,passer_rating,passing_att,passing_cmp,passing_ints,passing_tds,passing_twopta,twopta,twoptm,twoptmissed,passing_twoptm,passing_yds,rushing_att,rushing_lng,rushing_lngtd,rushing_tds,rushing_twopta,rushing_twoptm,rushing_yds,tds
+2015,1,1:00,9/13/2015,GB (31) at CHI (23),True,False,GB,CHI,CHI,GB,REG,False,140.5,23,18,0,3,0,0,0,0,0,189,8,15,0,0,0,0,35,3
+2015,2,8:30,9/20/2015,SEA (17) at GB (27),True,False,GB,SEA,GB,SEA,REG,True,116.9,33,25,0,2,1,1,1,0,1,249,6,9,0,0,0,0,23,2
+2015,3,8:30,9/28/2015,KC (28) at GB (38),True,False,GB,KC,GB,KC,REG,True,138.5,35,24,0,5,0,0,0,0,0,333,2,11,0,0,0,0,16,5
+2015,4,4:25,10/4/2015,GB (17) at SF (3),True,False,GB,SF,SF,GB,REG,False,99.0,32,22,0,1,0,0,0,0,0,224,3,17,0,0,0,0,33,1
+2015,5,1:00,10/11/2015,STL (10) at GB (24),True,False,GB,STL,GB,STL,REG,True,82.8,30,19,2,2,0,0,0,0,0,241,8,18,0,0,0,0,39,2
+2015,6,4:25,10/18/2015,SD (20) at GB (27),True,False,GB,SD,GB,SD,REG,True,107.7,29,16,0,2,0,0,0,0,0,255,2,15,0,0,0,0,14,2
+2015,8,8:30,11/1/2015,GB (10) at DEN (29),False,True,DEN,GB,DEN,GB,REG,False,69.7,22,14,0,0,0,0,0,0,0,77,2,17,0,0,0,0,31,0
+2015,9,1:00,11/8/2015,GB (29) at CAR (37),False,True,CAR,GB,CAR,GB,REG,False,96.6,48,25,1,4,1,1,1,0,1,369,4,8,0,0,0,0,22,4
+2015,10,1:00,11/15/2015,DET (18) at GB (16),False,True,DET,GB,GB,DET,REG,True,83.6,61,35,0,2,1,1,0,0,0,333,2,9,0,0,0,0,8,2
+2015,11,4:25,11/22/2015,GB (30) at MIN (13),True,False,GB,MIN,MIN,GB,REG,False,86.9,34,16,0,2,1,1,1,0,1,212,3,8,0,0,0,0,6,2
+2015,12,8:30,11/26/2015,CHI (17) at GB (13),False,True,CHI,GB,GB,CHI,REG,True,62.4,43,22,1,1,0,0,0,0,0,202,4,18,0,0,0,0,33,1
+2015,13,8:25,12/3/2015,GB (27) at DET (23),True,False,GB,DET,DET,GB,REG,False,105.4,36,24,1,2,0,1,0,0,0,273,4,17,17,1,1,0,27,3
+2015,14,4:25,12/13/2015,DAL (7) at GB (28),True,False,GB,DAL,GB,DAL,REG,True,99.5,35,22,0,2,0,0,0,0,0,218,3,16,0,0,0,0,27,2
+2015,15,4:05,12/20/2015,GB (30) at OAK (20),True,False,GB,OAK,OAK,GB,REG,False,68.8,39,22,1,1,0,0,0,0,0,204,1,-1,0,0,0,0,-1,1
+2015,16,4:25,12/27/2015,GB (8) at ARI (38),False,True,ARI,GB,ARI,GB,REG,False,66.2,28,15,1,1,1,1,1,0,1,151,3,10,0,0,0,0,19,1
+2015,17,8:30,1/3/2015,MIN (20) at GB (13),False,True,MIN,GB,GB,MIN,REG,True,80.8,44,28,1,1,0,0,0,0,0,291,3,11,0,0,0,0,12,1
+2015,1,4:40,1/10/2015,GB (35) at WAS (18),True,False,GB,WAS,WAS,GB,POST,False,93.5,36,21,0,2,1,1,1,0,1,210,1,-1,0,0,0,0,-1,2

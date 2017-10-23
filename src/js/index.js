@@ -6,9 +6,9 @@ import seasonTotals from './lib/season-totals';
 import seasonPlays from './lib/season-plays';
 
 const element = document.querySelector('body');
-const years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017];
+const seasons = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017];
 
-seasonTotals.fetch(years).then((data) => {
+seasonTotals.fetch(seasons).then((data) => {
   const chart = new BarChart(element);
 
   chart.renderAxisY(() => {
@@ -21,12 +21,12 @@ seasonTotals.fetch(years).then((data) => {
   })
   .renderAxisX(() => {
     return data.map((d) => {
-      return d.year;
+      return d.season;
     });
   })
   .renderBars(data);
 });
 
-seasonPlays.fetch(years).then((data) => {
+seasonPlays.fetch(seasons).then((data) => {
   console.log(data);
 });
